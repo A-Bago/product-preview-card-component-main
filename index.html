@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Gabrielle Essence Eau De Parfum - A floral, solar and voluptuous interpretation by CHANEL.">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./dist/style.css">
+  <link rel="stylesheet" href="./dist/print.css" media="print">
+</head>
+
+<body>
+  <main class="product">
+    <div class="product__img">
+      <picture>
+        <source media="(max-width: 500px)" srcset="/images/image-product-mobile.jpg">
+        <img class="product__image" src="/images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De Parfum">
+      </picture>
+    </div>
+
+    <aside class="product__sidebar">
+      <p class="product__sidebar-category">perfume</p>
+      <h1 class="product__sidebar-name">Gabrielle Essence Eau De Parfum</h1>
+      <p class="product__sidebar-description">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.</p>
+      <span class="product__sidebar-price">$149.99 <s>$169.99</s></span>
+      <button class="product__sidebar-btn" aria-label="Add Gabrielle Essence Eau De Parfum to cart">
+        <img src="./images/icon-cart.svg" alt="" role="presentation">
+        Add to cart
+      </button>
+    </aside>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+$base-font-size: 16px; // Define the base font size
+
+@function toRem($pixels) {
+    @return calc($pixels / $base-font-size) * 1rem;
+}
+
+@function toPercent($pixels, $container-size) {
+    @return calc($pixels / $container-size) * 100%;
+}

@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Background-color-cream);
+}
+
+span {
+  font-family: "Fraunces", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  --primary-color: #3D8168;
+  --primary-text-color: #1C232B;
+  --paragraph-text-color: #6C7289;
+  --Background-color-cream: #f2ebe3;
+  --btn-hover-color: #1A4032;
+}
+
+.product {
+  display: flex;
+  width: 37.5rem;
+  height: 28.125rem;
+  background-color: #fff;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+.product__img {
+  width: 50%;
+  height: 100%;
+}
+.product__img img {
+  width: 100%;
+  height: 100%;
+}
+.product__sidebar {
+  width: 39.3333333333%;
+  margin-left: 5.3333333333%;
+}
+.product__sidebar-category {
+  color: var(--paragraph-text-color);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.3125rem;
+  line-height: 0.9375rem;
+  margin-bottom: 8.4745762712%;
+  margin-top: 13.5593220339%;
+  text-transform: uppercase;
+  width: 38.9830508475%;
+}
+.product__sidebar-name {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  width: 100%;
+  height: 21.3333333333%;
+  margin-bottom: 10.1694915254%;
+}
+.product__sidebar-description {
+  color: var(--paragraph-text-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4375rem;
+  margin-bottom: 12.2881355932%;
+  width: 100%;
+}
+.product__sidebar-price {
+  color: var(--primary-color);
+  font-size: 2rem;
+  line-height: 2rem;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 12.7118644068%;
+}
+.product__sidebar s {
+  font-size: 0.8125rem;
+  color: var(--paragraph-text-color);
+  font-weight: 500;
+  margin-left: 8.0508474576%;
+}
+.product__sidebar-btn {
+  background-color: var(--primary-color);
+  border-radius: 0.625rem;
+  border: none;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: 3rem;
+  padding: 0;
+  width: 100%;
+}
+.product__sidebar-btn img {
+  margin-right: 0.75rem;
+  width: 0.875rem;
+  height: 1rem;
+}
+.product__sidebar-btn:hover {
+  background-color: #1A4032;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    width: 21.4375rem;
+    height: 38.1875rem;
+    background-color: #fff;
+    border-radius: 0.625rem;
+    overflow: hidden;
+  }
+  .product__img {
+    width: 100%;
+    height: 39.2798690671%;
+  }
+  .product__img img {
+    width: 100%;
+    height: 100%;
+  }
+  .product__sidebar {
+    width: 100%;
+    height: 60.7201309329%;
+    margin-left: 6.9970845481%;
+    margin-right: 6.9970845481%;
+  }
+  .product__sidebar-category {
+    color: var(--paragraph-text-color);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.3125rem;
+    line-height: 0.9375rem;
+    margin-bottom: 5.8309037901%;
+    margin-top: 6.9970845481%;
+    text-transform: uppercase;
+    width: 26.8221574344%;
+  }
+  .product__sidebar-name {
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    width: 86.0058309038%;
+    height: 17.2506738544%;
+    margin-bottom: 4.6647230321%;
+  }
+  .product__sidebar-description {
+    color: var(--paragraph-text-color);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.4375rem;
+    margin-bottom: 6.9970845481%;
+    width: 86.0058309038%;
+  }
+  .product__sidebar-price {
+    align-items: center;
+    color: var(--primary-color);
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-bottom: 5.8309037901%;
+    width: 56.5597667638%;
+  }
+  .product__sidebar s {
+    font-size: 0.8125rem;
+    color: var(--paragraph-text-color);
+    font-weight: 500;
+    margin-left: 5.5393586006%;
+  }
+  .product__sidebar-btn {
+    background-color: var(--primary-color);
+    border-radius: 0.625rem;
+    border: none;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: 3rem;
+    padding: 0;
+    width: 86.0058309038%;
+  }
+  .product__sidebar-btn img {
+    margin-right: 0.75rem;
+    width: 0.875rem;
+    height: 1rem;
+  }
+  .product__sidebar-btn:hover {
+    background-color: #1A4032;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=style.css.map */

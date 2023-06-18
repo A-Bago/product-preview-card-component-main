@@ -1,0 +1,24 @@
+$breakpoints-up:(
+    "medium":700px,
+    "large":300px,
+    "x-large":1440px,
+);
+
+@mixin large{
+    @media (min-width:map-get($breakpoints-up, "large")) {
+        @content;
+    }
+}
+
+@mixin breakpoint($bp: 0){
+    @media(min-width: $bp){
+       @content;
+    }
+}
+
+// Mobile styles
+$layout-breakpoint-small: 500px;
+
+@media (max-width: $layout-breakpoint-small) {
+    @import './mobile';
+}
